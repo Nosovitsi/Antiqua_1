@@ -4,9 +4,25 @@
     box-sizing: border-box;
 }
 
-.container_2 {
-    width: 1010px;
-    background-color: rgba(165, 42, 42, 0.305);
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+
+/* ................................................................. */
+
+.container {
+    width: 1278px;
+    margin: 0 auto;
 }
 
 .main {
@@ -16,12 +32,160 @@
     min-height: 100vh;
 }
 
-.red_line {
+.redLine {
     padding-left: 93px;
     background: #A22236;
 }
 
-.content {
+.all_content {
     display: flex;
     width: 100%;
+    flex-direction: column;
+    margin-left: -0.1px;
+}
+
+
+/* ................................................................. */
+
+.header {
+    width: 100%;
+}
+
+.container_2 {
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.header_logo {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    float: left;
+}
+
+.header_topMenu {
+    display: flex;
+    justify-content: right;
+}
+
+.header_topMenu li {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 106%;
+    color: #B0213D;
+    margin-left: 36px;
+    padding-top: 45px;
+}
+
+.header_topMenu span {
+    text-transform: uppercase;
+}
+
+.header_subMenu {
+    display: flex;
+    justify-content: right;
+    padding-top: 42px;
+}
+
+.header_subMenu a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 106%;
+    color: #343434;
+}
+
+.header_subMenu span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12.72px;
+}
+
+.header_subMenu p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15.28px;
+    color: #B0213D;
+}
+
+.header_subMenu .pointer {
+    transform: translate(-10px, 5px);
+}
+
+.header_subMenu_mail {
+    padding-right: 100px;
+}
+
+.header_subMenu_tel {
+    padding-right: 10px;
+}
+
+.header_subMenu_socIcon {
+    padding-right: 85px;
+}
+
+
+/* ................................................................. */
+
+.content {
+    background-image: url(../Media/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 890px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    padding-top: 34px;
+}
+
+.box {
+    display: flex;
+    width: 850px;
+    justify-content: right;
+}
+
+.box .text {
+    padding-top: 46px;
+    width: 358px;
+    padding-bottom: 63px;
+}
+
+.box .text h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 98%;
+    color: #A22236;
+}
+
+.box .text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 13.72px;
+    color: white;
+}
+
+.right {
+    width: 100%;
+    padding-left: 60px;
+}
+
+.rightText {
+    width: 190px;
+    padding-top: 30px;
+}
+
+.rightText p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 112.5%;
+    text-align: center;
 }
