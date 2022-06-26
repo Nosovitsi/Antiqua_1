@@ -33,6 +33,7 @@ body {
 
 .main_sub {
     display: flex;
+    width: 100%;
 }
 
 .redLine {
@@ -55,8 +56,9 @@ body {
 }
 
 .container_2 {
-    width: 1010px;
-    margin: 0 auto;
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .header_logo {
@@ -135,6 +137,7 @@ body {
     background-position: center;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .left {
@@ -145,15 +148,17 @@ body {
 
 .gallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-left: 120px;
-    padding-top: 34px;
+    width: 100%;
+    padding: 34px 100px;
 }
 
 .box {
     display: flex;
-    width: 850px;
+    width: 100%;
     justify-content: right;
+    padding-right: 50px;
 }
 
 .box .text {
@@ -289,4 +294,24 @@ body {
     font-size: 16px;
     line-height: 98%;
     color: #A22236;
+}
+
+@media screen and (max-width: 1290px) {
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+    }
+    .container_2 {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 235px;
+    }
+    .gallery {
+        padding: 34px 60px;
+    }
 }
